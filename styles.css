@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    margin-top: 80px;
+    margin-top: 33px;
 }
 
 .navbar-brand {
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-custom {
-    background-color: rgb(0, 102, 255);
+    background-color: #57718a;
 }
 
 .logo {
@@ -48,18 +48,17 @@ body {
 #btn-falta-envido:hover,
 #btn-flor:hover {
     color: whitesmoke;
-    background-color: #007bff;
+    background-color: #7c8fa0;
 }
 
 .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
+    color: #5c80a0;
+    border-color: #57718a;
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    border-color: #57718a;
 }
 
 .btn-lg {
