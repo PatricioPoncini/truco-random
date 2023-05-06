@@ -5,13 +5,14 @@ const btnEnvido = document.getElementById("btn-envido");
 const btnRealEnvido = document.getElementById("btn-real-envido");
 const btnFaltaEnvido = document.getElementById("btn-falta-envido");
 const btnFlor = document.getElementById("btn-flor");
+const phraseText = document.getElementById("phrase");
 
 const arrTruco = [
     "Jugaron una carrera el sapo y la comadreja. El sapo al aventajarla le dijo 'Truco' en la oreja",
     "Te noto muy asustado, no ha de ser que viste al cuco? Y aunque parezca apuradote vi cantar el Truco",
     "Tengo un vagon en la mano, por eso no puedo jugar, y aunque te parezca en vano, Truco tengo que cantar",
     "Pa pintar una pared tuve que usar mameluco, y pa ganarle a usted tengo que hacerle algún truco",
-    "Cuando me pongo a rimar muchas veces me trabuco, si el tanto quiero cantara veces me sale truco",
+    "Cuando me pongo a rimar muchas veces me trabuco, si el tanto quiero cantar a veces me sale truco",
     "Pa poder salir del bosque muchas plantas yo machuco. Pa ganarle a usted no hay otra que cantar truco",
     "Si queres jugar conmigo no te hagas el pitucoyo, te quiero ganar porque estoy jugando al Truco",
     "No me importa si sos tan bruto con tal que me aceptes mi modesto truco",
@@ -30,12 +31,13 @@ const arrRetruco = [
     "Pensaste que me achicaba o que iba a salir corriendo. Te voy a dar flor de biaba quiero Retruco mintiendo",
     "Barrunto que esté mintiendo, no le tengo miedo al cucoy en sus ojos estoy viendo ansias de un Quiero Retruco !!",
     "No temas al Diablo... No temas al Cuco... Si tenes naipes buenos, quereme este quiero Retruco",
-    "A ver... A ver... Mi olfato me dice te gasto si me aceptas un Quiero Retruco, che"
+    "A ver... A ver... Mi olfato me dice te gasto si me aceptas un Quiero Retruco, che",
+    "Amargo y Retruco, ¡Carajo!"
 ];
 
 const arrQuieroVale4 = [
     "Que  bronca. Que maltrato. Ya te voy a dar... digo Quiero Vale Cuatro",
-    "Mi china se recostó con un sospechoso sapo y cuando despertó le dijo: Mi amor !Quiero Vale Cuatro!",
+    "Mi china se recostó con un sospechoso sapo y cuando despertó le dijo: Mi amor ¡Quiero Vale Cuatro!",
     "Usté... que juega conmigo me va'  pinta de aparato. Tengo adentro un enano que chiya: Mi amigo, quiero Vale Cuatro",
     "Ya cayó el chivo en el lazo, y el rival no es para tanto. Te vi' dar con un hachazo quiero Vale Cuatro canto",
     "Esta guitarra gastada fue encontrada en un teatro y aunque no he ligado nada, canto quiero Vale Cuatro",
@@ -45,6 +47,7 @@ const arrQuieroVale4 = [
 ];
 
 const arrEnvido = [
+    "Pa el amor soy atrevido y bravo como as de espada, yo nunca grito el envido exponiendo la jugada.",
     "Amalaya con las penas cuando flaquea elcorazon. Yo le canto Envido apenas pues no tengo pal rabon",
     "Atienda la relación que hace un gaucho perseguido: Ahorita le vi' ganar con este grandioso Envido",
     "A este humano reprimido le vi' cantar el envido ...",
@@ -54,7 +57,8 @@ const arrEnvido = [
     "Aunque yo tenga pinta de computadora, hay un enano aqui metido que me esta delesoplar: Dale que tenes Envido",
     "El humano me ha herido: Dijo que yo no sé jugar al Envido",
     "Vea Vea Vea ! Que cosa mas bonita. Salí a afanar, Envido la famosa Teresita",
-    "Si no me convidas con cerveza, por lo menos ofreceme un Envido"
+    "Si no me convidas con cerveza, por lo menos ofreceme un Envido",
+    "Cuando vine de La Isla traiba un lazo retorcido; con él enlacé dos cartas y con dos le digo Envido"
 ];
 
 const arrRealEnvido = [
@@ -80,7 +84,9 @@ const arrFaltaEnvido = [
     "Sos un adversario dormido. No importa: yo te despierto con un Falta Envido",
     "No creas que me has vencido: Atajate esta Falta Envido",
     "A que te achicas: Falta Envido",
-    "Para el tanto yo no tengo nada pero vos menos... asi que Falta Envido"
+    "Para el tanto yo no tengo nada pero vos menos... asi que Falta Envido",
+    "Cuando vine de La Isla traiba un lazo retorcido; con él enlacé dos cartas y con dos le digo Envido",
+    "No se ponga tan contento por el envite que ha echao, porque escuchará al momento: Falta envido, cuñao"
 ];
 
 const arrFlor = [
@@ -97,36 +103,44 @@ const arrFlor = [
 ];
 
 btnTruco.addEventListener("click", () => {
-    const randomFrase = arrTruco[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrTruco.length)
+    const randomFrase = arrTruco[index];
+    phraseText.textContent = randomFrase;
 });
 
 btnRetruco.addEventListener("click", () => {
-    const randomFrase = arrRetruco[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrRetruco.length)
+    const randomFrase = arrRetruco[index];
+    phraseText.textContent = randomFrase;
+
 });
 
 btnQuieroVale4.addEventListener("click", () => {
-    const randomFrase = arrQuieroVale4[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrQuieroVale4.length)
+    const randomFrase = arrQuieroVale4[index];
+    phraseText.textContent = randomFrase;
 });
 
 btnEnvido.addEventListener("click", () => {
-    const randomFrase = arrEnvido[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrEnvido.length)
+    const randomFrase = arrEnvido[index];
+    phraseText.textContent = randomFrase;
 });
 
 btnRealEnvido.addEventListener("click", () => {
-    const randomFrase = arrRealEnvido[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrRealEnvido.length)
+    const randomFrase = arrRealEnvido[index];
+    phraseText.textContent = randomFrase;
 });
 
 btnFaltaEnvido.addEventListener("click", () => {
-    const randomFrase = arrFaltaEnvido[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrFaltaEnvido.length)
+    const randomFrase = arrFaltaEnvido[index];
+    phraseText.textContent = randomFrase;
 });
 
 btnFlor.addEventListener("click", () => {
-    const randomFrase = arrFlor[Math.floor(Math.random() * arrTruco.length)];
-    console.log(randomFrase);
+    const index = Math.floor(Math.random() * arrFlor.length)
+    const randomFrase = arrFlor[index];
+    phraseText.textContent = randomFrase;
 });

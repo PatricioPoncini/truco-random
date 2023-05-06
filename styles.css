@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(background-gauchos.jpg);
+}
+
+#container {
+    margin-top: 100px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar-custom {
+    background-color: rgb(0, 102, 255);
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 30px;
+}
+
+#btn-truco,
+#btn-retruco,
+#btn-envido,
+#btn-quiero-vale4,
+#btn-real-envido,
+#btn-falta-envido,
+#btn-flor {
+    background-color: whitesmoke;
+}
+
+#btn-truco:hover,
+#btn-retruco:hover,
+#btn-envido:hover,
+#btn-quiero-vale4:hover,
+#btn-real-envido:hover,
+#btn-falta-envido:hover,
+#btn-flor:hover {
+    color: whitesmoke;
+    background-color: #007bff;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.btn-rounded-pill {
+    border-radius: 50rem;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.col-sm-8 {
+    margin-top: 60px;
+}
+
+.bubble {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 50%;
+    position: relative;
+}
+
+.bubble:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+    transform: translateX(-100%) translateY(-50%);
+    top: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #ccc;
+    border-bottom: 20px solid transparent;
+    transform: translateX(-100%) translateY(-50%);
+    top: 50%;
+    left: -1px;
+    z-index: -2;
+}
+
+.bubble.shadow:before,
+.bubble.shadow:after {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+.porteño {
+    margin-left: 30px;
+    height: 300px;
+    width: 320px;
+}
+
+.phrase {
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        max-width: 50px;
+    }
+
+    .row .col-md-8 {
+        order: 2;
+    }
+
+    .row .col-md-4 {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
