@@ -1,0 +1,35 @@
+body {
+    background-color: #bfd9ea;
+}
+
+.guitarra {
+    height: 40px;
+    width: 20px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar-custom {
+    background-color: #57718a;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 30px;
+}
+
+#social-media-container a {
+    margin-top: 170px;
+    color: #32618c;
+}

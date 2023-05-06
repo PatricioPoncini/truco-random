@@ -133,6 +133,13 @@ body {
     padding: 15px;
 }
 
+.btn-about {
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
 @media (max-width: 767px) {
     .navbar-brand img {
         max-width: 50px;
